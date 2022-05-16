@@ -1,0 +1,1 @@
+.logo{animation:animate 1.5s linear infinite;justify-content:center;display:flex}@keyframes animate{50%{opacity:0}}body{overflow:hidden}.logo img{object-fit:contain;float:left;width:80%;height:80%;object-fit:cover}

@@ -1,0 +1,81 @@
+@import "../../globals/index";
+
+#nav {
+    position: fixed;
+    z-index: 500001;
+    top: 0;
+    width: 100%;
+    height: 45px;
+    background-color: rgba($color: #000000, $alpha: 0);
+}
+
+.app-bar-logo-text {
+    color: #b8b7b7;
+    padding-left: 25px;
+    font-size: medium !important;
+}
+
+#togglers {
+    display: flex;
+    float: right;
+    width: 50px;
+    align-items: center;
+    left: 0;
+    height: 100%;
+    -webkit-app-region: no-drag;
+    font-weight: bold;
+}
+
+#togglers > #close {
+    padding-left: 15px;
+    background-color: rgba($color: #000000, $alpha: 0);
+    width: 100%;
+    top: 20%;
+    justify-content: center;
+    height: 100%;
+    float: left;
+    margin-left: -40px;
+    margin-top: 52px;
+    cursor: default;
+    transition: all ease-in-out 0.2s;
+}
+
+#togglers > #close:hover {
+    .close-icon {
+        color: red !important;
+    }
+}
+.minimize-icon {
+    color: #fff;
+    position: absolute;
+    font-size: 35px !important;
+    margin-left: -60px;
+}
+.minimize-icon:hover {
+    color: rgb(0, 217, 255);
+}
+.app-bar-logo {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 60000000 !important;
+}
+
+.close-icon {
+    position: absolute;
+
+    font-size: 35px !important;
+    color: #fff;
+}
+
+.App-bar-alert {
+    position: relative !important;
+    z-index: 9999990000001 !important;
+    width: 100% !important;
+}
+
+.app-bar-menu-container {
+    position: absolute !important;
+    z-index: 9999990000001 !important;
+    width: 100% !important;
+}

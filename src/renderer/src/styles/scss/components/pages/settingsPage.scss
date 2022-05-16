@@ -1,0 +1,76 @@
+.launcher-container {
+    height: 101vh !important;
+    background-color: #10171f;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 3000;
+    h2 {
+        margin-left: 40%;
+        margin-top: 1%;
+        margin-bottom: 10%;
+    }
+    p {
+        align-items: center;
+        justify-content: center;
+        margin-left: 5%;
+        margin-right: 5%;
+
+        font-size: 1.3rem;
+    }
+    .social-medi-text {
+        p {
+            margin-top: 80px !important;
+            margin-bottom: -20px !important;
+        }
+    }
+}
+.setting-heading1 {
+    font-family: 'Popins', sans-serif;
+}
+.settings-social-media {
+    background-color: #fff;
+    width: 38%;
+    height: 30px;
+    border: 5px outset #fff;
+    border-radius: 10px;
+    align-items: center;
+    height: 38px;
+    margin-top: 40px;
+    margin-left: 5%;
+    margin-bottom: -100px;
+    .settings-social-media-grid {
+        display: flex;
+        margin-top: 5px;
+        margin-left: -55px;
+        list-style: none;
+
+        li {
+            margin-right: 7px;
+            padding-right: 7px;
+            padding-left: 3px;
+        }
+        .settings-social-icon-bar {
+            width: 2px;
+            height: 15px;
+            margin-top: 5px;
+            background-color: rgba($color: #000000, $alpha: 0.15000000596046448);
+        }
+    }
+}
+.launcher-container-right {
+    h2 {
+        align-items: center;
+        justify-content: center;
+        margin-left: 30%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    margin-right: 5%;
+}
+
+.MuiNativeSelect-icon {
+    color: #fff !important;
+    opacity: 0.5;
+}

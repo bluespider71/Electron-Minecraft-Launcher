@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="717.674" height="392.625" viewBox="0 0 717.674 392.625">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.036" x2="1.034" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#28b5f4"/>
+      <stop offset="1" stop-color="#3758ff"/>
+    </linearGradient>
+    <filter id="Subtraction_1" x="0" y="0" width="389.947" height="392.625" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feFlood flood-color="#3758ff" flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_320" data-name="Group 320" transform="translate(-1620 -149)">
+    <g id="Group_318" data-name="Group 318" transform="translate(1740 269)">
+      <g transform="matrix(1, 0, 0, 1, -120, -120)" filter="url(#Subtraction_1)">
+        <path id="Subtraction_1-2" data-name="Subtraction 1" d="M65.4,152.625h0l-65.4,0V0H149.947V76.192l-12.913-.269,12.913,13.1v63.6l-66.927,0L65.035,134.246,65.4,152.62Zm-.847-91.277V91.272H95.426V61.348Z" transform="translate(120 120)" fill="url(#linear-gradient)"/>
+      </g>
+      <path id="Subtraction_2" data-name="Subtraction 2" d="M149.947,152.625h0l-71.21,0L60.75,134.249l.37,18.374H0V0H149.947V76.284l-17.2-.357,17.2,17.44v59.258ZM60.272,61.348V91.274H91.145V61.348Z" transform="translate(2.677)" fill="none" stroke="#fff" stroke-width="4"/>
+    </g>
+    <text id="RIVA_LAUNCHER" data-name="RIVA
+LAUNCHER" transform="translate(1953.674 326.903)" fill="#fff" font-size="42" font-family="Supercell-Magic" letter-spacing="0.25em"><tspan x="0" y="0">RIVA</tspan><tspan x="0" y="62">LAUNCHER</tspan></text>
+  </g>
+</svg>

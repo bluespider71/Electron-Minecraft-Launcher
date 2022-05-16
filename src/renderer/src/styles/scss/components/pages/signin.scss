@@ -1,0 +1,152 @@
+.signin-social-media {
+    background-color: #fff;
+    width: 96%;
+    // height: 45px;
+    border: 5px outset #fff;
+    border-radius: 10px;
+    align-items: center;
+    height: 45px;
+    margin-top: 52px;
+    margin-bottom: -100px;
+    margin-left: -30%;
+    .social-media-grid {
+        display: flex;
+        margin-top: 3px;
+        margin-left: -25px;
+        list-style: none;
+
+        li {
+            margin-right: 10px;
+            padding-right: 2.5px;
+                       padding-left: 3px;
+        }
+      
+        .social-icon-bar {
+            width: 2px;
+            height: 15px;
+            margin-top: 5px;
+            background-color: rgba($color: #000000, $alpha: 0.15000000596046448);
+        }
+    }
+}
+.signin-footer {
+    margin-top: 5%;
+    color: #fff;
+    width: 100%;
+    margin-left: 50%;
+
+    .signin-footer-text {
+        margin-bottom: 10px;
+        h6 {
+            margin-bottom: 0px;
+            text-align: center;
+            margin-left: -50%;
+        }
+    }
+}
+
+.signin-header {
+    img {
+        height: 70px !important;
+        width: 131px !important;
+    }
+}
+
+.signin-button {
+    margin-left: 120px;
+    margin-top: 70px;
+    cursor: pointer;
+    img {
+        height: 75px !important;
+        width: 131px !important;
+        border: 1px inset lightskyblue;
+    }
+}
+.login-heading {
+    font-family: 'Poppins', sans-serif;
+}
+.login-bottom1{
+    font-family: "Poppins";
+     opacity: 0.25;
+      text-decoration: "none";
+       color: "#fff";
+    //    margin-top: -5px; 
+}
+
+.sign-footer-bottom{
+    opacity: 0.25;
+    font-family: "Poppins";
+    color: "#fff";
+    font-size: 14px;
+}
+.signin-footer-bottom-right{
+    cursor: "pointer";
+    text-decoration: underline;
+      font-size: 14px;
+    font-family: "Poppins";
+
+}
+.main-grid {
+    position: relative;
+    z-index: 3000;
+}
+
+.animation-bar {
+    position: absolute;
+    margin-top: -100px;
+    margin-left: 700px !important;
+    background-color: #0f161e;
+    z-index: 500000;
+    width: 100vw;
+    height: 0;
+    animation: animationBar 0.5s;
+    .animation-logo-image {
+        img {
+            animation: animationLogoImg 0.7s;
+            height: 80px !important;
+            width: 230px !important;
+        }
+    }
+}
+
+@keyframes animationBar {
+    0% {
+        position: relative;
+        height: 30px;
+        width: 100vw;
+        margin-top: 100px;
+        margin-bottom: 200px;
+    }
+    100% {
+        position: relative;
+        margin-bottom: 100px;
+        height: 0;
+        width: 100vw;
+        margin-top: -100px;
+    }
+}
+
+@keyframes animationLogoImg {
+    0% {
+        position: fixed;
+        top: 100px;
+        margin-left: -55px;
+        margin-top: 0;
+    }
+    100% {
+        margin-left: -55px;
+        position: fixed;
+        top: 430px;
+        margin-top: -750px;
+    }
+}
+
+.signin-input {
+    color: #fff !important;
+    width: 100%;
+    margin-left: -10px;
+    margin-top: 5px;
+    height: 50px;
+    
+    background-color: rgba($color: #fff, $alpha: 0.029999999329447746);
+}

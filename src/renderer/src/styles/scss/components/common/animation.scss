@@ -1,0 +1,135 @@
+.animation-container {
+    display: relative;
+    background-color: #0f161e;
+}
+
+@keyframes rivalogo {
+    0% {
+        top: 400px;
+        margin-top: 400px;
+    }
+    25% {
+        top: 400px;
+        margin-top: 400px;
+    }
+    100% {
+        top: 30;
+    }
+}
+
+@keyframes rivaLogoContainer {
+    0% {
+        top: 30;
+        height: 30vh;
+        width: 100vw;
+    }
+    25% {
+        top: 30;
+        height: 30vh;
+        width: 100vw;
+    }
+    50% {
+        top: 30;
+        height: 30vh;
+        width: 100vw;
+    }
+    100% {
+        top: 30;
+        height: 30px;
+        width: 100vw;
+    }
+}
+
+@keyframes rivaimg {
+    0% {
+        height: 90px !important;
+        width: 250px !important;
+    }
+    99% {
+        height: 90px !important;
+        width: 250px !important;
+    }
+    100% {
+        height: 0px !important;
+        width: 0px !important;
+    }
+}
+
+.riva-logo-container {
+    margin-left: 2%;
+    margin-top: 6%;
+    width: 100vw;
+    padding-left: 45%;
+    height: 0px;
+    animation: rivaLogoContainer 3s;
+    top: 80px;
+    .riva-logo-image {
+        margin-left: -100px;
+        img {
+           
+            width: 250px !important;
+        }
+        animation: rivalogo 1s;
+    }
+}
+
+@keyframes shadow {
+    0% {
+        height: 0;
+        margin-left: -150px;
+        width: 110vw;
+        top: 0px;
+    }
+
+    25% {
+        height: 170vh;
+        margin-left: -150px;
+        width: 110vw;
+        top: 0px;
+    }
+
+    50% {
+        height: 170vh;
+        margin-left: -150px;
+        width: 110vw;
+        top: 0px;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 65%, 0% 65%);
+    }
+
+    75% {
+        height: 170vh;
+        margin-left: -150px;
+        width: 110vw;
+        top: 0;
+    }
+
+    100% {
+        height: 0vh;
+        margin-left: -150px;
+        width: 110vw;
+        top: 0px;
+    }
+}
+
+$bg-image: "/logo-shadow.png";
+
+.riva-logo-shadow {
+    animation: shadow 1.9s ease-in-out;
+    position: fixed;
+    margin-top: -25%;
+    margin-left: -110px;
+    background-image: url($bg-image);
+    background-size: cover;
+    border-radius: 5px solid #fff;
+    padding-bottom: 100px;
+}
+
+.bg {
+    background-color: #0f161e !important;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 3000 !important;
+    top: 0;
+    left: 0;
+}

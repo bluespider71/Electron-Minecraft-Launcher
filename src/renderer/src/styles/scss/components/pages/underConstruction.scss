@@ -1,0 +1,53 @@
+@import "../../globals/index";
+
+$animation: linear infinite;
+$animation-name: logo;
+$animation-duration: 3s;
+$shining-color: blue;
+
+.under-construction-logo {
+    animation: $animation $animation-name $animation-duration;
+    color: $text-color;
+    font-size: $text-size;
+    width: 10%;
+    min-width: 80px;
+    margin-bottom: 5%;
+    margin-left: 38%;
+    margin-top: 20%;
+}
+
+.under-construction-container {
+    width: 66%;
+    height: 70%;
+    left: 33vw;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: $background-color;
+}
+
+
+.under-construction-text {
+    margin-left: 10vw !important;
+    color: $text-color !important;
+}
+
+@keyframes logo {
+    0% {
+        transform: translate(0px, 0px) rotate(4deg);
+        transform: translate(0px, 0px) rotate(4deg);
+        filter: drop-shadow(0px 3px 10px $shining-color);
+        filter: drop-shadow(0px 3px 10px $shining-color);
+    }
+    50% {
+        transform: translate(0px, 10px) rotate(0deg);
+        transform: translate(0px, 10px) rotate(0deg);
+        filter: drop-shadow(0px 3px 35px $shining-color);
+        filter: drop-shadow(0px 3px 35px $shining-color);
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(-4deg);
+        transform: translate(0px, 0px) rotate(-4deg);
+        filter: drop-shadow(0px 3px 35px $shining-color);
+        filter: drop-shadow(0px 3px 35px $shining-color);
+    }
+}

@@ -1,0 +1,99 @@
+.launcher-games-container {
+    background-repeat: no-repeat;
+    max-width: 100%;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 10%;
+    margin-left: 80px;
+}
+.launcher-my-games {
+    display: flex;
+    margin-bottom: 80px !important;
+    background-color: #0c1218;
+    margin-left: -38px !important;
+    .launcher-my-game {
+        cursor: pointer;
+        margin-inline: 2px;
+        padding-left: 8%;
+        animation: myGame 4s;
+        img {
+            border-radius: 10px;
+            width: 325px;
+            height: 275px;
+        }
+        :hover {
+            animation: myGameHover 1s infinite;
+        }
+    }
+}
+$my-game-color: #0080ff;
+@keyframes myGameHover {
+    0% {
+        filter: drop-shadow(0px 3px 10px $my-game-color);
+        filter: drop-shadow(0px 3px 10px $my-game-color);
+    }
+    50% {
+        filter: drop-shadow(0px 3px 20px $my-game-color);
+        filter: drop-shadow(0px 3px 20px $my-game-color);
+    }
+    100% {
+        filter: drop-shadow(0px 3px 20px $my-game-color);
+        filter: drop-shadow(0px 3px 20px $my-game-color);
+    }
+}
+
+.launcher-all-games {
+    display: flex;
+    background-color: #0f161e;
+    margin-left: -38px !important;
+
+    .launcher-all-game {
+        cursor: pointer;
+        margin-inline: 2px;
+        padding-left: 8%;
+        img {
+            border-radius: 10px;
+            width: 325px;
+            height: 275px;
+        }
+        :hover {
+            animation: allGameHover 1s infinite;
+        }
+    }
+}
+@keyframes myGame {
+    0% {
+        transform: translateX(220%);
+        transition: transform 0.5s, opacity;
+    }
+
+    100% {
+        transform: translateX(0%);
+        transition: transform 0.5s, opacity;
+    }
+}
+$all-game-color: #00ff0d;
+@keyframes allGameHover {
+    0% {
+        filter: drop-shadow(0px 3px 10px $all-game-color);
+        filter: drop-shadow(0px 3px 10px $all-game-color);
+    }
+    50% {
+        filter: drop-shadow(0px 3px 20px $all-game-color);
+        filter: drop-shadow(0px 3px 20px $all-game-color);
+    }
+    100% {
+        filter: drop-shadow(0px 3px 20px $all-game-color);
+        filter: drop-shadow(0px 3px 20px $all-game-color);
+    }
+}
+.launcher-title {
+    margin-left: -90%;
+}
+.gap {
+    margin-top: 500px;
+    margin-left: -500px !important;
+}

@@ -1,0 +1,87 @@
+.initial-logo-container {
+    display: flex;
+    position: absolute;
+    margin-left: -65px !important;
+    justify-content: center;
+
+   
+}
+.initial-loading-text {
+    margin-top: 410px;
+    margin-left: -72%;
+    font-size: 0.8rem;
+    font-family: poppins;
+    position: absolute;
+    color: #fff;
+    opacity: 0.25;
+}
+.initial-page-logo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 115px;
+    height: 170px !important;
+    width: 90px !important;
+}
+.initial-logo {
+    position: absolute;
+    margin-left: -110px !important;
+    height: 300px !important;
+    margin-top: -115px;
+
+    width: 300px !important;
+}
+.initial-logo-text {
+    position: absolute;
+    margin-top: 55px;
+    margin-left: -105px;
+    height: 50px !important;
+    width: 300px !important;
+}
+
+.initial-chart {
+    background: rgba(255, 255, 255, 0.1);
+    justify-content: flex-start;
+    font-family: poppins;
+    position: relative;
+    padding: 0 0px;
+    display: flex;
+    height: 10px;
+    margin-top: 455px !important;
+    margin-bottom: 70px;
+    margin-left: -90px !important;
+    width: 82vw;
+
+    #value2 {
+        font-family: poppins;
+        font-size: medium;
+        position: absolute;
+        color: rgba($color: #fff, $alpha: 0.25);
+        margin-top: -35px;
+        margin-left: 290px;
+    }
+}
+
+.initial-chart span {
+    margin-left: 5px;
+    color: #fff;
+    font-weight: medium;
+}
+
+.initial-bar {
+    animation: load 10s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    background: linear-gradient(to right, #3758ff, #28b5f4);
+    height: 10px;
+    width: 0;
+}
+
+@keyframes load {
+    0% {
+        width: 0;
+    }
+    100% {
+        /* You need to change the percentage below to match the value in the corresponding <span> */
+        width: 100%;
+    }
+}

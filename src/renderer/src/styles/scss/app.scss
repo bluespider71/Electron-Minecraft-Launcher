@@ -1,0 +1,77 @@
+.App {
+    text-align: center;
+}
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    margin: 0;
+    background-color: #10171f;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-app-region: drag;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: supercell-magic !important;
+
+    
+}
+
+@font-face {
+    font-family: supercell-magic !important;
+    src: url("/supercell-magic.ttf");
+    
+  }
+
+.clickable {
+    -webkit-app-region: no-drag;
+}
+
+.dragable {
+    -webkit-app-region: drag;
+}
+
+code {
+    font-family: Supercell-Magic;
+}
+
+.scrollable {
+    overflow: scroll;
+}
+
+// select {
+//     border: 0px solid rgba(0,0,0, 0.1) !important ;
+//     outline: none !important;
+//     box-shadow: none !important;
+// }
+// .MuiSelect-standard {
+//     border: 2px solid #fff !important;
+// }
+option {
+    background: rgba(28, 35, 42) !important;
+    color:#fff;
+    // opacity: 100%;
+    font-size: 1.20rem !important;
+    // font-size-adjust: 0.3 !important;
+    // height: 35px !important;
+    // padding: 12px !important;
+    // border-radius: 5px !important;
+}
+.option {
+    // content: ">";
+    font-size: 20px;
+    display: none;
+    padding-right: 10px;
+    padding-left: 5px;
+    color: #fff;
+    border-radius: 0%;
+  }
+.MuiNativeSelect-select:focus {
+    background-color: navy;
+}
