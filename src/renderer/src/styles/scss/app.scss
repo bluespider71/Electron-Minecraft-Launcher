@@ -33,6 +33,11 @@ body {
     -webkit-app-region: no-drag;
 }
 
+#nav.dragable {
+    position: absolute;
+    z-index: 500003;
+}
+
 .dragable {
     -webkit-app-region: drag;
 }

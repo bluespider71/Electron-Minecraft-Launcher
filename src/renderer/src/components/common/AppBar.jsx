@@ -13,7 +13,6 @@ import MinimizeIcon from "@mui/icons-material/Minimize";
 const CloseAlert = (props) => {
     return (
         <div className="clickable">
-            {console.log(props)}
             <Dialog
                 open={props.open}
                 style={{

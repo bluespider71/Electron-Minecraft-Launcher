@@ -10,7 +10,6 @@ import { SocialIcon } from "react-social-icons";
 import NavBar from "../common/NavBar";
 
 const LauncherSettings = ({setDeltaY, scroll}) => {
-    //console.log(scroll)
     return (
         <div className="settings-container">
             <Grid container className="clickable">

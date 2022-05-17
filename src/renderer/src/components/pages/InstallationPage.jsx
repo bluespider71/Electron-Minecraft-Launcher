@@ -16,7 +16,7 @@ const InstallationPage = () => {
     return (
         <div>
             <Grid container className="installation-page-container">
-                <Grid xs={11} sm={11} md={11} lg={11}>
+                <Grid item xs={11} sm={11} md={11} lg={11}>
                     <p className="big-text">
                         MÜKEMMEL <br />
                         OYUN <br />
@@ -37,7 +37,7 @@ const InstallationPage = () => {
                         INDIR
                     </button>
                 </Grid>
-                <Grid container xs={12} sm={12} md={12} lg={12}>
+                <Grid item xs={12} sm={12} md={12} lg={12}>
                     <Grid>
                         <Logo />
                     </Grid>

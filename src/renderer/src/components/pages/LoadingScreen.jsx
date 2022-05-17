@@ -22,18 +22,18 @@ const MainLauncher = () => {
     const [gameButtonIsClicked, setGameButtonIsClicked] = useState(false);
     const dispatch = useDispatch();
 
-    
+
 
     useEffect(() => {
-        if (isSlideAnimationStarted.isStarted){
-            if (isSlideAnimationStarted.up){
+        if (isSlideAnimationStarted.isStarted) {
+            if (isSlideAnimationStarted.up) {
                 setTimeout(() => {
                     setDeltaY(0);
-                },1000)
+                }, 1000)
             } else {
                 setTimeout(() => {
                     setDeltaY(900);
-                },1000)
+                }, 1000)
             }
         }
 
@@ -61,23 +61,21 @@ const MainLauncher = () => {
         }
     }, [gameButtonIsClicked]);
 
+    const onClickHandler = (e) => {
+        setGameButtonIsClicked(true);
+    }
+
     const condition = isSlideAnimationStarted.isStarted ? (isSlideAnimationStarted.up ? "loading-screen-container-up" : "loading-screen-container-down") : "loading-screen-container";
 
     return (
-        <div onWheel={(e) => {
-            setDeltaY(deltaY + e.deltaY);
-            // if(!(deltaY > 0 && deltaY < 100))
-            //     dispatch(reducers.isSlideAnimationStarted.setIsSlideAnimationStarted({ isStarted: true, up: true}));
-            // else if (!(deltaY <= 900 && deltaY > 800))
-            //     dispatch(reducers.isSlideAnimationStarted.setIsSlideAnimationStarted({ isStarted: true, up: false}));
-        }} style={{ marginTop: `-${deltaY >= 900 ? 900 : deltaY}px` }} className={condition}>
+        <div style={{ marginTop: `-${deltaY >= 900 ? 900 : deltaY}px`, transition: 'margin-top ,1s' }} className={condition}>
             <div className="bg"></div>
 
             <div className="clickable slide-animation">
                 <Grid
                     container
                     className="main-grid"
-                    square
+                    square="true"
                     item
                     xs={false}
                     sm={4}
@@ -97,54 +95,57 @@ const MainLauncher = () => {
                     <div className="launcher-user">
                         <img src={LuncherUser} alt="LuncherUser" />
                         <p className="luancher-text">
-                           <span style={{opacity: 0.5, fontSize: '1rem', }}>Kullanıcı Adı</span>  <br />
+                            <span style={{ opacity: 0.5, fontSize: '1rem', }}>Kullanıcı Adı</span>  <br />
                             <span style={{ opacity: "1", marginTop: '1.5rem' }}>RivaDarlin</span>
                         </p>
                     </div>
 
-                        {gameButtonIsClicked ? <> 
-                        
-                            <div id="value1">{gameButtonIsClicked ? "100" : "0%"}</div>
+                    {gameButtonIsClicked ? <>
 
-                        </> : <div style={{marginTop: '300px'}}></div> }   
-                                        <Grid container>
+                        <div id="value1">{gameButtonIsClicked ? "100" : "0%"}</div>
+
+                    </> : <div style={{ marginTop: '300px' }}></div>}
+                    <Grid container>
                         <Grid item xs={12} sm={12} md={12}>
-                        {gameButtonIsClicked ? <>
-                            <div className="chart">
-                            
-                                <div className={gameButtonIsClicked ? "animated-bar" : "bar"}></div>
-                              
-                            </div>
-                            </> : <div style={{marginTop: '530px'}}>
+                            {gameButtonIsClicked ? <>
+                                <div className="chart">
 
-                            </div> }
+                                    <div className={gameButtonIsClicked ? "animated-bar" : "bar"}></div>
+
+                                </div>
+                            </> : <div style={{ marginTop: '530px' }}>
+
+                            </div>}
                         </Grid>
                     </Grid>
                     <div className={isSlideAnimationStarted.isStarted && !isSlideAnimationStarted.up ? "loading-screen-footer slide-below" : "loading-screen-footer"}>
                         <div className={isSlideAnimationStarted.isStarted && !isSlideAnimationStarted.up ? "loading-screen-user-info slide-below" : "loading-screen-user-info"}>
-                            <p>Riva'da...</p>
-                            <span>12655 kişi oynuyor!</span>
+
                         </div>
-                        <div className={isSlideAnimationStarted.isStarted && !isSlideAnimationStarted.up ? "loading-screen-button-border slide-below" : "loading-screen-button-border"} onClick={() => setGameButtonIsClicked(true)}></div>
-                        <button className={isSlideAnimationStarted.isStarted && !isSlideAnimationStarted.up ? "loading-screen-button slide-below" : "loading-screen-button"} onClick={() => setGameButtonIsClicked(true)}>
+                        <button className="loading-screen-button" onClick={onClickHandler}>
                             OYNA
                         </button>
                     </div>
-                    <div className={isSlideAnimationStarted.isStarted && !isSlideAnimationStarted.up ? "loading-screen-image-shadow slide-below" : "loading-screen-image-shadow"}></div>
                     <div className={isSlideAnimationStarted.isStarted && !isSlideAnimationStarted.up ? "loading-screen-image slide-below" : "loading-screen-image"}>
-                        <img src={Launcher}></img>
-                        <div className="copyright">
-                            {/* <p style={{ opacity: "0.20000000298023224" }}>Riva Network ® | Tüm hakları saklıdır.</p> */}
-                            {/* <img src={RivaLogo} /> */}
+                        <div className="loading-screen-image-button" style={{
+                            backgroundImage: `linear-gradient(to right, rgba(216, 216, 216, 0.2), rgba(255, 255, 255, 0.2)), url(${Launcher})`,
+                        }} onClick={() => {
+                            setDeltaY(1000);
+                        }}>
+                            <div className="copyright1">
+                                <p>Riva'da...</p>
+                                <p>12655 kişi oynuyor!</p>
+                            </div>
                         </div>
+
                     </div>
                 </Grid>
-            </div>
+            </div >
 
             <div className="second-page-container">
                 <SettingsPage scroll={deltaY} />
             </div>
-        </div>
+        </div >
     );
 };
 

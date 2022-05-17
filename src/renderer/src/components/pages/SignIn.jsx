@@ -118,15 +118,15 @@ const App = () => {
                             <h2 className="login-heading">Giriş yap</h2>
                             <WhiteBorderTextField inputProps={{style:{marginLeft: "10px"}}}className="signin-input" margin="normal" required fullWidth id="userName" placeholder="Kullanıcı Adı" name="userName" autoComplete="userName" autoFocus />
                             <WhiteBorderTextField inputProps={{style:{marginLeft: "10px"}}}className="signin-input" margin="normal" required fullWidth name="password" placeholder="Şifre" type="password" id="password" autoComplete="current-password" />
-                            <Grid container sx={{ marginTop: "25px", width: "350px", marginLeft: "15px" }}>
-                                <Grid item sx={6} md={6} lg={6}>
+                            <Grid container style={{ marginTop: "25px", width: "350px", marginLeft: "15px" }}>
+                                <Grid item xs={6} md={6} lg={6}>
                                     {" "}
                                     <div style={{ display: "flex", alignItems: "center", cursor: "pointer", marginTop: "-8px", marginLeft: "-30px" }} onClick={() => handleChange(!checked)} className="clickable">
                                         <CustomColorCheckbox checked={checked} icon={<RadioButtonUncheckedIcon style={{ height: "15px", width: "15px" }} />} checkedIcon={<RadioButtonCheckedIcon style={{ height: "15px", width: "15px" }} />} label="Beni Hatırla" />
                                         <div className="login-bottom1">Beni hatırla</div>
                                     </div>
                                 </Grid>
-                                <Grid item sx={6} md={6} lg={6}>
+                                <Grid item xs={6} md={6} lg={6}>
                                     {/* <Link href="#" variant="body2" className="login-bottom1" sx={{  marginLeft: "15px !important" }}>
                                         
                                     </Link> */}
@@ -193,7 +193,6 @@ const App = () => {
                 </Grid>
                 <Grid
                     item
-                    xs={false}
                     sm={4}
                     md={8}
                     sx={{

@@ -1,6 +1,6 @@
 .chart {
     // background: rgba(255, 255, 255, 0.1);
-    background-color: rgba(55, 88, 255, 0.25) ;
+    background-color: rgba(55, 88, 255, 0.25);
     // opacity: 0.25;
     justify-content: flex-start;
     align-items: center;
@@ -30,10 +30,12 @@
     font-weight: bolder;
 
 }
+
 .animated-bar {
     animation: load 10s normal forwards;
     @extend .bar;
 }
+
 .bar {
     box-shadow: 0 10px 40px -10px #fff;
     background: linear-gradient(to right, #3758ff, #28b5f4);
@@ -46,6 +48,7 @@
     0% {
         width: 0;
     }
+
     100% {
         /* You need to change the percentage below to match the value in the corresponding <span> */
         width: 100%;
@@ -55,13 +58,15 @@
 .loading-screen-footer {
     height: 145px;
     margin-top: -115px;
-    background-color:rgba(20, 20, 20, 0.9);
+    background-color: rgba(20, 20, 20, 0.9);
     // opacity: 0.8;
     width: 100%;
     margin-bottom: -25px;
+
     p {
         color: #fff;
     }
+
     .loading-screen-user-info {
         font-family: poppins;
         position: absolute;
@@ -73,6 +78,7 @@
             color: rgba($color: #fff, $alpha: 0.8);
             margin-top: -13px;
         }
+
         span {
             color: #fff;
             font-weight: bold !important;
@@ -84,49 +90,73 @@
     text-decoration: none;
     color: #fff;
     background-image: linear-gradient(to right, #28b5f4, #3758ff);
-    margin: 40px;
+    margin: 20px 40px;
     z-index: 999;
     border: none;
     height: 4.94rem;
     width: 14.9rem;
     border-radius: 17px;
     cursor: pointer;
-    // border-top: 1px solid #28b5f4;
     font-family: supercell-magic;
+    display: inline-block;
+    padding: 15px 25px;
+    outline: none;
+    box-shadow: 0 9px #1e2752;
+    transform: translateY(0px) scale(1);
+    transition: transform 0.3s;
+    &:hover {
+        box-shadow: 0 5px #1e2752;
+        transform: translateY(4px) scale(1.1);
+    }
 }
+
+
 .loading-screen-logo {
     position: absolute;
 
-   left: 720px;
-   top: 20px;
+    left: 720px;
+    top: 20px;
+
     img {
         height: 55px !important;
         width: 101px !important;
     }
 }
-.loading-screen-button-border {
-    height: 4.94rem;
-    width: 14.9rem;
-    border-radius: 17px;
-    margin-left: 43px;
-    margin-top: 45px;
-    border-bottom: 4.5px inset rgba(55, 88, 255, 0.25);
-    border-right: 4.5px inset rgba(55, 88, 255, 0.25);
 
-    // border-image-source: linear-gradient(to right, #28b5f4, #3758ff );
-    position: absolute;
-    cursor: pointer;
-    background-image: -webkit-gradient(linear, left, right, color-stop(1, #28b5f4, color-stop(1, #3758ff)));
-}
 .loading-screen-image {
     margin-top: -218px;
     margin-left: 80%;
 
-    img {
+    div.loading-screen-image-button {
+        background-size: contain;
         width: 240px;
         height: 120px;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 5px solid transparent;
+        transform: scale(1);
+        transition: transform 0.3s;
+        &:hover {
+            border: 5px solid rgb(146, 27, 27);
+            transform: scale(1.2);
+        }
+
+        .copyright1 {
+            text-align: center;
+        }
+
+        .copyright1 span {
+            font-weight: bold !important;
+        }
+
+        .copyright1 p,
+        .copyright1 span {
+            color: rgba(255, 255, 255, 0.8);
+            font-family: poppins;
+        }
     }
 }
+
 .loading-screen-image-shadow {
     position: absolute;
     margin-top: 684px;
@@ -138,11 +168,13 @@
     width: 240px;
     height: 120px;
 }
+
 .copyright {
     font-size: 12px;
     color: #fff;
     display: flex;
     margin-top: 45px;
+
     img {
         width: 40px;
         height: 40px;
@@ -157,15 +189,18 @@
     border-radius: 25px;
     background-color: #10171f;
     display: flex;
+
     img {
         margin: 5%;
         width: 80px;
         height: 80px;
     }
+
     p {
         margin-top: 10%;
         color: #fff;
         font-size: x-small;
+
         span {
             font-size: large;
         }
@@ -184,10 +219,11 @@
 .loading-screen-container {
     top: 0;
     width: 100vw;
-    -webkt-app-region:drag;
+    -webkt-app-region: drag;
 }
-.main-grid{
-}
+
+.main-grid {}
+
 .loading-screen-container-up {
     top: 0;
     margin-top: 0;
@@ -221,6 +257,7 @@
     0% {
         margin-top: 0;
     }
+
     100% {
         margin-top: -100vh;
     }
@@ -230,10 +267,12 @@
     0% {
         margin-top: -100vh;
     }
+
     100% {
         margin-top: 0;
     }
 }
+
 .luancher-text {
     font-family: 'Poppins', sans-serif;
 }
